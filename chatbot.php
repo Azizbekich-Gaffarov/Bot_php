@@ -3,13 +3,13 @@
 //Ulanishlar va shartli belgilar 
 date_default_timezone_set('Asia/Tashkent'); 
 include 'Telegram.php'; 
-$bot_token = '6943458877:AAE5j2rTxa4bIEx8FoAGqor4_H22pLIgjyE'; 
+$bot_token = '7075694285:AAGnxob1yUZzbTMfY6KCN0ItmQxtIN-EVT0'; 
 $telegram = new Telegram($bot_token); 
 $text = $telegram->Text(); 
 $chat_id = $telegram->ChatID(); 
 $ism = $telegram->FirstName(); 
 $mid = $telegram->MessageID(); 
-$admin="";
+$admin="https://t.me/Gofforov_Azizbek";
 //Start 
 if ($text == '/start') { 
   $action = ['chat_id' => $chat_id, 'action' => 'typing']; 
