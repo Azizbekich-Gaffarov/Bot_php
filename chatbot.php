@@ -3,13 +3,13 @@
 //Ulanishlar va shartli belgilar 
 date_default_timezone_set('Asia/Tashkent'); 
 include 'Telegram.php'; 
-$bot_token = '6943458877:AAG_hGQHg7lNn21CyNGL_uB0abAw7vQRLZ0'; 
+$bot_token = '6943458877:AAE5j2rTxa4bIEx8FoAGqor4_H22pLIgjyE'; 
 $telegram = new Telegram($bot_token); 
 $text = $telegram->Text(); 
 $chat_id = $telegram->ChatID(); 
 $ism = $telegram->FirstName(); 
 $mid = $telegram->MessageID(); 
-$admin="#";
+$admin="";
 //Start 
 if ($text == '/start') { 
   $action = ['chat_id' => $chat_id, 'action' => 'typing']; 
